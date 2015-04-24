@@ -63,7 +63,7 @@ ZGN(function()
                 selected_box.attr('data-opened',2);
                 alert(selected_box.attr('data-name') + "が開いた！");
 
-            },200);
+            },1000);
 
 
         }
