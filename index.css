@@ -1,0 +1,59 @@
+body {
+    background-color: #080808;
+    color: azure;
+}
+
+.selection {
+    float: left;
+    margin:0 10px;
+}
+
+.arrow {
+    text-align: center;
+}
+
+.treasure_box[data-selected="true"] > p.arrow {
+    visibility: visible;
+}
+.treasure_box[data-selected="false"] > p.arrow {
+    visibility: hidden;
+}
+
+
+.treasure_box div.box_img {
+    margin:auto;
+    display:  block;
+    width:    32px;
+    height:   32px;
+
+    background-image: url('img/treasureboxes.png');
+    background-repeat:        no-repeat;
+}
+
+#s_box_0[data-opened="0"]  div.box_img {
+    background-position:        0px 0px;
+}
+#s_box_0[data-opened="1"]  div.box_img {
+    background-position:        0px -32px;
+}
+#s_box_0[data-opened="2"]  div.box_img {
+    background-position:        0px -64px;
+}
+#s_box_1[data-opened="0"]  div.box_img {
+    background-position:        -32px 0px;
+}
+#s_box_1[data-opened="1"]  div.box_img {
+    background-position:        -32px -32px;
+}
+#s_box_1[data-opened="2"]  div.box_img {
+    background-position:        -32px -64px;
+}
+#s_box_2[data-opened="0"]  div.box_img {
+    background-position:        -64px 0px;
+}
+#s_box_2[data-opened="1"]  div.box_img {
+    background-position:        -64px -32px;
+}
+#s_box_2[data-opened="2"]  div.box_img {
+    background-position:        -64px -64px;
+}
